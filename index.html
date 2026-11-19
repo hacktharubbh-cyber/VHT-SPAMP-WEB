@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VHT SPAM SENDER</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Share Tech Mono', monospace;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('bg4to.jpg') no-repeat center/cover;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.308);
+        backdrop-filter: blur(5px);
+    }
+
+    .login-box {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 8, 8, 0);
+        padding: 40px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 380px;
+        border: 1px solid #ff0000;
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+
+    .login-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, hsl(0, 100%, 54%), transparent);
+        animation: scan 2s linear infinite;
+    }
+
+    @keyframes scan {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+
+    h2 {
+        text-align: center;
+        color: #0066ff;
+        font-family: 'Orbitron', sans-serif;
+        margin-bottom: 30px;
+        text-shadow: 0 0 15px #0004ff;
+        letter-spacing: 2px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #ff0000;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        background: #ff0000;
+        border: 1px solid #ff0000;
+        color: #ff0000;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 15px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+
+    input:focus {
+        box-shadow: 0 0 15px rgba(0, 81, 255, 0.5);
+        border-color: #0026ff;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        background: transparent;
+        border: 2px solid #0044ff;
+        color: #002fff;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #0400ff;
+        color: #000;
+        box-shadow: 0 0 20px #0077ff;
+    }
+
+    .error {
+        color: #fbff00;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 13px;
+        display: none;
+    }
+
+    .note {
+        text-align: center;
+        margin-top: 20px;
+        color: #940000;
+        font-size: 11px;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>ACCESS LOGIN</h2>
+    
+    <label for="password">> Enter Password</label>
+    <input type="password" id="password" placeholder="owner pw" autocomplete="off">
+    
+    <button onclick="checkPassword()">[ LOGIN ]</button>
+
+     <br><button><a href="https://youtube.com/@virus_aura" target="_blank" class="btn">PW VIDEO</a></button>
+    
+    <div class="error" id="error">Wrong Password!</div>
+    <p class="note">Owner Pw Access Only</p>
+</div>
+
+<script>
+function checkPassword() {
+    const correctPassword = "VHTaura";
+    const enteredPassword = document.getElementById("password").value;
+    const errorDiv = document.getElementById("error");
+
+    if (enteredPassword === correctPassword) {
+        // Password හරි නම් උඹේ main page එකට යනවා
+        window.location.href = "index.html";
+    } else {
+        errorDiv.style.display = "block";
+        document.getElementById("password").value = "";
+    }
+}
+
+// Enter key ගැහුවත් වැඩ කරන්න
+document.getElementById("password").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        checkPassword();
+    }
+});
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Sender v2.0</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+    
+    body {
+        font-family: 'Share Tech Mono', monospace;
+        background: #000000;
+        color: #ff0000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: 
+            linear-gradient(rgba(255, 0, 0, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 0, 0, 0.03) 1px, transparent 1px);
+        background-size: 20px 20px;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        background: rgba(20, 0, 0, 0.8);
+        padding: 30px;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0);
+        border: 1px solid #ff0000;
+        position: relative;
+    }
+    
+    .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #ff0000, transparent);
+        animation: scan 2s linear infinite;
+    }
+    
+    @keyframes scan {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+    
+    h2 {
+        text-align: center;
+        color: #ff0000;
+        margin-bottom: 20px;
+        font-family: 'Orbitron', sans-serif;
+        text-shadow: 0 0 10px #ff0000;
+        letter-spacing: 2px;
+    }
+    
+    label {
+        display: block;
+        margin: 15px 0 5px;
+        font-weight: 600;
+        color: #ff0000;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    input, textarea, select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 0;
+        border: 1px solid #ff0000;
+        background: #000000ec;
+        color: #ff0000;
+        font-size: 14px;
+        box-sizing: border-box;
+        font-family: 'Share Tech Mono', monospace;
+        outline: none;
+    }
+    
+    input:focus, textarea:focus, select:focus {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 25px;
+        background: transparent;
+        border: 2px solid #ff0000;
+        color: #ff0000;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Orbitron', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+    }
+    
+    button:hover {
+        background: #ff0000;
+        color: #000;
+        box-shadow: 0 0 20px #ff0000;
+    }
+    
+    .note {
+        font-size: 11px;
+        color: #8f0000;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .status {
+        margin-top: 15px;
+        padding: 10px;
+        border: 1px dashed #ff0000;
+        font-size: 12px;
+        color: #ff0000;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2> WHATSAPP S SENDER VIP</h2>
+    
+    <label for="youNumber">> You Number</label>
+    <input type="tel" id="youNumber" placeholder="94771234567" required>
+
+    <label for="spamNumber">> Target Number</label>
+    <input type="tel" id="spamNumber" placeholder="94771234567" required>
+
+    <label for="message">> Message Payload</label>
+    <textarea id="message" placeholder="Enter message here..." required></textarea>
+
+    <label for="repeat">> Repeat Count</label>
+    <select id="repeat">
+        <option value="1">1</option>
+        <option value="5">50</option>
+        <option value="10">100</option>
+        <option value="20">200</option>
+        <option value="50">500</option>
+        <option value="50">1000</option>
+        <option value="50">5000</option>
+    </select>
+
+    <button onclick="sendMessages()">[ SEND SPAMP ]</button>
+    <div class="status" id="status">owner by VHT aura</div>
+    <p class="note">⚠️ Opens chat only. Auto send not possible. Use responsibly.</p>
+</div>
+
+<script>
+function sendMessages() {
+    let youNumber = document.getElementById('youNumber').value.trim();
+    let spamNumber = document.getElementById('spamNumber').value.trim();
+    let message = document.getElementById('message').value.trim();
+    let repeat = parseInt(document.getElementById('repeat').value);
+    let status = document.getElementById('status');
+
+    if (!youNumber || !spamNumber || !message) {
+        alert("Fill all fields");
+        return;
+    }
+
+    youNumber = youNumber.replace(/[^0-9]/g, '');
+    spamNumber = spamNumber.replace(/[^0-9]/g, '');
+    let encodedMsg = encodeURIComponent(message);
+
+    status.innerText = `Status: Opening ${repeat} sessions...`;
+    
+    for (let i = 0; i < repeat; i++) {
+        setTimeout(() => {
+            let url = `https://wa.me/${spamNumber}?text=${encodedMsg}`;
+            window.open(url, '_blank');
+            status.innerText = `Status: Session ${i+1}/${repeat} opened`;
+        }, i * 800);
+    }
+    
+    setTimeout(() => {
+        status.innerText = "Status: Complete. Click send in each tab.";
+    }, repeat * 800);
+}
+</script>
+</script>
+</body>
+</html>
